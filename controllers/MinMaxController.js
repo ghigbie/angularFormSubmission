@@ -1,15 +1,16 @@
 (function(){
-   var MinMaxController = function($scope, $http){
+   var MinMaxController = function($scope, $http) {
        $scope.formModel = {};
 
-       $scope.onSubmit = function(){
+       $scope.onSubmit = function () {
            console.log("Hey I/'m Submitted!");
            console.log($scope.formModel);
        };
+   };
 
-       MinMaxController.$inject = ['$scope'];
+   MinMaxController.$inject = ['$scope'];
 
-       angular.module('minmax')
-           .controller('MinMaxController', MinMaxController);
-   }
+   angular.module('minmax')
+       .controller('MinMaxController', MinMaxController);
+
 }());
